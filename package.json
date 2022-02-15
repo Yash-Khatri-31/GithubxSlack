@@ -2,5 +2,8 @@
   "dependencies": {
     "init": "^0.1.2",
     "jest": "^27.5.1"
+  },
+  "scripts":{
+    "test":"jest"
   }
 }
