@@ -1,5 +1,5 @@
 function slackBot(value){
-    let a = 5;
+    let a = 4;
     if(!value) return a;
     else return a+value;
 }
