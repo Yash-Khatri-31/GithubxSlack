@@ -21,10 +21,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Notify slack
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: pullreminders/slack-action@master
+      - name: Send Slack Message
+        uses: parkingboss/slackbot-postmessage@v1
         with:
-          args: '{\"channel\":\"C032NCAKJPR\",\"text\":\"AEYo\"}'
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
+          request: '{\"channel\":\"CHANNEL ID\",\"text\":\"Hello world\"}'
       
