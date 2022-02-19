@@ -25,5 +25,5 @@ jobs:
         uses: parkingboss/slackbot-postmessage@v1
         with:
           token: ${{ secrets.SLACK_BOT_TOKEN }}
-          request: '{\"channel\":\"CHANNEL ID\",\"text\":\"Hello world\"}'
+          request: '{\"channel\":\"C032NCAKJPR\",\"text\":\"Hello world\"}'
       
